@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "ad57133b-dba6-4a3f-9536-1bdf189e425a",
+		"name": "FinalRestAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13903529"
+	},
+	"item": [
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pawnshops/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pawnshops",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pawnshops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pawnshops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTCreateItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pawnshops?itemName=Asus Gaming&itemCategory=Computer&price=7500000&startDate=2022-09-29&endDate=2022-10-29&isPaid=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pawnshops"
+					],
+					"query": [
+						{
+							"key": "itemName",
+							"value": "Asus Gaming"
+						},
+						{
+							"key": "itemCategory",
+							"value": "Computer"
+						},
+						{
+							"key": "price",
+							"value": "7500000"
+						},
+						{
+							"key": "startDate",
+							"value": "2022-09-29"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-10-29"
+						},
+						{
+							"key": "isPaid",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETEitem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pawnshops/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pawnshops",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
